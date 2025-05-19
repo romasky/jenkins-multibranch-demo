@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Feature: Auth') {
+    stage('Build') {
       steps {
-        echo "Building feature/user-auth"
+        echo "Building main branch..."
       }
     }
-    stage('Unit Tests') {
+    stage('Test') {
       steps {
-        echo "Running auth unit tests"
+        echo "Running tests on main..."
       }
     }
   }
